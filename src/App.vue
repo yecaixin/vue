@@ -1,23 +1,28 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
+    <Header></Header>
+    <!-- <v-nav></v-nav> -->
     <router-view/>
   </div>
 </template>
 
 <script>
+import Header     from '@/components/Vheader/header'
+import vNav       from '@/components/Vnav/nav'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Header,
+    vNav
+  }
 }
 </script>
 
 <style>
+	@import './style/common.css';
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  height: 100%;
 }
 </style>
