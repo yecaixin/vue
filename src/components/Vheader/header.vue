@@ -144,25 +144,11 @@ export default {
   }
 }
 
-
 #header {
   width: 100%;
-        height: 60px;
-        min-width:600px;
-        padding: 5px;
-        background: url('../../assets/img/zhi001.png');
-  // height: 50px;
-  // background: linear-gradient(to right, #006ef1 0%, #30b0fd 100%);
-  // .titleName{
-  //   font-size: 20px;
-  //   color: #fff;
-  //   line-height: 50px;
-  //   float: left;
-  //   margin-left: 36px;
-  // }
-  // .set{
-  //   float: right;
-  //   margin-right: 16px;
-  // }
+  height: 60px;
+  min-width:600px;
+  padding: 5px;
+  background: url('../../assets/img/zhi001.png');
 }
 </style>

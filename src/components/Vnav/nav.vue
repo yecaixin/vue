@@ -10,47 +10,30 @@
             background-color="#545c64"
             text-color="#fff"
             active-text-color="#ffd04b">
-            <el-submenu index="1">
-                <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>vue 样例</span>
-                </template>
-                <el-submenu index="1-4">
-                <template slot="title">vue</template>
-                <el-menu-item index="1-1"><router-link tag="li" to="/">父传子</router-link></el-menu-item>
-                <el-menu-item index="1-2"><router-link tag="li"  to="/a">子传父</router-link></el-menu-item>
-                <el-menu-item index="1-3"><router-link tag="li"  to="/b">less</router-link></el-menu-item>
-                <el-menu-item index="1-4"><router-link tag="li"  to="/c">elementUI</router-link></el-menu-item>
-                <el-menu-item index="1-5"><router-link tag="li"  to="/d">vuex</router-link></el-menu-item>
-                </el-submenu>
-            </el-submenu>
+            
 
-            <el-submenu index="2">
+            <!-- <el-submenu index="2">
                 <template slot="title">
                 <i class="el-icon-location"></i>
                 <span>elementui</span>
                 </template>
-                <!-- <el-submenu index="2-4"> -->
-                <!-- <template slot="title">vue</template> -->
-                <el-menu-item index="2-1"><router-link tag="li"  to="/q">父传子</router-link></el-menu-item>
-                <el-menu-item index="2-2"><router-link tag="li"  to="/w">子传父</router-link></el-menu-item>
-                <el-menu-item index="2-3"><router-link tag="li"  to="/e">less</router-link></el-menu-item>
-                <el-menu-item index="2-4"><router-link tag="li"  to="/r">elementUI</router-link></el-menu-item>
-                <el-menu-item index="2-5"><router-link tag="li"  to="/t">vuex</router-link></el-menu-item>
-                <!-- </el-submenu> -->
-            </el-submenu>
+                <el-menu-item index="2-1"><router-link tag="li"  to="/q"></router-link></el-menu-item>
+                <el-menu-item index="2-2"><router-link tag="li"  to="/w"></router-link></el-menu-item>
+                <el-menu-item index="2-3"><router-link tag="li"  to="/e"></router-link></el-menu-item>
+                <el-menu-item index="2-4"><router-link tag="li"  to="/r"></router-link></el-menu-item>
+                <el-menu-item index="2-5"><router-link tag="li"  to="/t"></router-link></el-menu-item>
+            </el-submenu> -->
 
-              <el-submenu index="3">
+              <el-submenu index="1">
                 <template slot="title">
                 <i class="el-icon-location"></i>
                 <span>数据</span>
                 </template>
-                <el-menu-item index="3-1"><router-link tag="li"  to="/g">过滤器</router-link></el-menu-item>
-                <el-menu-item index="3-2"><router-link tag="li"  to="/l">axios</router-link></el-menu-item>
-                <el-menu-item index="3-3"><router-link tag="li"  to="/coms">自定义组件</router-link></el-menu-item>
-                <el-menu-item index="3-4"><router-link tag="li"  to="/table">自定义表格组件</router-link></el-menu-item>
-                <el-menu-item index="3-5"><router-link tag="li"  to="/t">vuex</router-link></el-menu-item>
-                <el-menu-item index="3-6"><router-link tag="li"  to="/mock">mock</router-link></el-menu-item>
+                <el-menu-item index="3-1"><router-link tag="li"  to="/subgroup">组件</router-link></el-menu-item>
+                <el-menu-item index="3-2"><router-link tag="li"  to="/echarts">echarts</router-link></el-menu-item>
+                <el-menu-item index="3-3"><router-link tag="li"  to="/table">表格</router-link></el-menu-item>
+                <!-- <el-menu-item index="3-5"><router-link tag="li"  to="/t"></router-link>测试</el-menu-item>
+                <el-menu-item index="3-6"><router-link tag="li"  to="/mock"></router-link>测试</el-menu-item> -->
               </el-submenu>
 
             <!-- <el-menu-item index="3" disabled> 添加disable 可禁止
@@ -58,13 +41,27 @@
                 <span slot="title">导航三</span>
             </el-menu-item> -->
 
-            <el-submenu index="4">
+            <!-- <el-submenu index="4">
                 <template slot="title">
                 <i class="el-icon-location"></i>
                 <span>test</span>
                 </template>
                 <el-menu-item index="4-1"><router-link tag="li"  to="/test">test</router-link></el-menu-item>
-              </el-submenu>
+              </el-submenu> -->
+              <el-submenu index="3">
+                <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>测试菜单</span>
+                </template>
+                <el-submenu index="1-4">
+                <template slot="title">二级菜单</template>
+                <el-menu-item index="1-1"><router-link tag="li"  to="/1">菜单一</router-link></el-menu-item>
+                <el-menu-item index="1-2"><router-link tag="li"  to="/2">菜单二</router-link></el-menu-item>
+                <el-menu-item index="1-3"><router-link tag="li"  to="/3">菜单三</router-link></el-menu-item>
+                <el-menu-item index="1-4"><router-link tag="li"  to="/4">菜单四</router-link></el-menu-item>
+                <el-menu-item index="1-5"><router-link tag="li"  to="/5">菜单五</router-link></el-menu-item>
+                </el-submenu>
+            </el-submenu>
 
             </el-menu>
         </el-col>
