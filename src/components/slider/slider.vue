@@ -1,5 +1,5 @@
 <template>
-  <div id="subgrounp">{{message}}组件</div>
+  <div id="subgrounp">{{message}}slider</div>
 </template>
 
 <script>

@@ -27,11 +27,21 @@
               <el-submenu index="1">
                 <template slot="title">
                 <i class="el-icon-location"></i>
-                <span>数据</span>
+                <span>功能测试</span>
                 </template>
                 <el-menu-item index="3-1"><router-link tag="li"  to="/subgroup">组件</router-link></el-menu-item>
                 <el-menu-item index="3-2"><router-link tag="li"  to="/echarts">echarts</router-link></el-menu-item>
                 <el-menu-item index="3-3"><router-link tag="li"  to="/table">表格</router-link></el-menu-item>
+                <el-menu-item index="3-5"><router-link tag="li"  to="/slider">轮播图</router-link></el-menu-item>
+                <!-- <el-menu-item index="3-6"><router-link tag="li"  to="/mock"></router-link>测试</el-menu-item> -->
+              </el-submenu>
+
+               <el-submenu index="2">
+                <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>测试模块</span>
+                </template>
+                <el-menu-item index="2-1"><router-link tag="li"  to="/test">test</router-link></el-menu-item>
                 <!-- <el-menu-item index="3-5"><router-link tag="li"  to="/t"></router-link>测试</el-menu-item>
                 <el-menu-item index="3-6"><router-link tag="li"  to="/mock"></router-link>测试</el-menu-item> -->
               </el-submenu>
@@ -92,7 +102,7 @@ export default {
 <style>
 #nav{
     width: 200px;
-    height: 100%;
+    /* height: 100%; */
     background:rgb(84, 92, 100)
 }
 .side{
