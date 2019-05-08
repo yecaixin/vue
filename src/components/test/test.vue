@@ -1,13 +1,45 @@
 <template>
-  <div id="subgrounp">{{message}}test</div>
+  <div id="subgrounp">
+      <h1>demo-icon</h1>
+      <!-- icon -->
+          <ycx-icon type="waiting" size="big"></ycx-icon>
+          
+      <!-- botton -->
+      <h1>demo-botton</h1>
+          <ZsButton type="danger">111</ZsButton>
+      <!-- message -->
+
+      <h1>demo-areaselect</h1>
+      <!-- areaselect -->
+      <div class="demo-box" style="max-width: 500px;">
+            <ycx-area-select
+                    :province="{}"
+                    :city="{}"
+                    :country="{}"
+                    @select="handleSelectArea"
+            ></ycx-area-select>
+      </div>
+
+
+  </div>
 </template>
 
 <script>
 import {isChinese} from '../../utils/utils';
+import Icon from '../icon/icon.vue';
+import ycxAreaSelect from '../areaSelect/areaSelect.vue';
+import ZsButton from '../button/src/button.vue';
+
+
 export default {
+   components: {
+            ycxIcon: Icon,
+            ycxAreaSelect,
+            ZsButton
+        },
   data: function() {
     return {
-      message: "Welcome To"
+      message: "Welcome"
     };
   },
   created(){
@@ -30,7 +62,9 @@ console.log(isChinese("你好你好"));
 console.log(isChinese("111"));
     },
   methods: {
-  
+   handleSelectArea (area) {
+                console.log(area);
+            },
   }
 };
 </script>

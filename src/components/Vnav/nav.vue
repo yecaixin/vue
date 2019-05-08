@@ -49,11 +49,10 @@
                <el-submenu index="3">
                 <template slot="title">
                 <i class="el-icon-location"></i>
-                <span>地图模块</span>
+                <span>组件</span>
                 </template>
-                <el-menu-item index="2-1"><router-link tag="li"  to="/amap">高德地图</router-link></el-menu-item>
-                <!-- <el-menu-item index="3-5"><router-link tag="li"  to="/t"></router-link>测试</el-menu-item>
-                <el-menu-item index="3-6"><router-link tag="li"  to="/mock"></router-link>测试</el-menu-item> -->
+                <el-menu-item index="2-1"><router-link tag="li"  to="/examples">组件汇总</router-link></el-menu-item>
+                
               </el-submenu>
 
             <!-- <el-menu-item index="3" disabled> 添加disable 可禁止

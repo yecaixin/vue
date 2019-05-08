@@ -10,6 +10,7 @@ import test         from '@/components/test/test'
 import slider       from '@/components/slider/slider'
 import infoModify   from '@/components/infoModify/infoModify'
 
+import examples     from '@/page/examples/index'
 import amap     from '@/page/map/index'
  
 // const amap = r => require.ensure( [], () => r (require('@/page/map/index')))//页面按需加载的引入
@@ -63,6 +64,11 @@ export default new Router({
       path: '/amap',
       name: 'amap',
       component: amap
+    },
+    {
+      path: '/examples',
+      name: 'examples',
+      component: examples
     },
   ]
 })

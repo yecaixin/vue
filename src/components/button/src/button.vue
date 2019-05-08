@@ -56,3 +56,7 @@
         }
     };
 </script>
+<style lang="less" scoped>
+ @import "../../../assets/css/src/var.less";
+ @import "../../../assets/css/components/button.less";
+</style>
