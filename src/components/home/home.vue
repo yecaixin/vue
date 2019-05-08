@@ -1,5 +1,6 @@
 <template>
   <div id="home">{{message}}首页</div>
+  
 </template>
 
 <script>

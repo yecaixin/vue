@@ -1,0 +1,131 @@
+/* Transition
+ -------------------------- */
+/* gradient
+ -------------------------- */
+/* Colors
+// -------------------------- */
+/* Link
+ -------------------------- */
+/* Border
+-------------------------- */
+/* Box-shadow
+-------------------------- */
+/* Fill
+-------------------------- */
+/* Font
+-------------------------- */
+/* z-index
+ -------------------------- */
+/* Disable base
+-------------------------- */
+/* icon
+-------------------------- */
+/* Select
+-------------------------- */
+/* Input
+-------------------------- */
+/* Button
+-------------------------- */
+/* Table
+-------------------------- */
+/* Pagination
+-------------------------- */
+/* Loading
+ --------------------------*/
+/* Message Box
+ -------------------------- */
+/* Message
+-------------------------- */
+/* Dialog
+-------------------------- */
+/* Scrollbar
+--------------------------*/
+/* Popover
+-------------------------- */
+/* Tooltip
+  -------------------------- */
+/* Radio
+-------------------------- */
+/* Checkbox
+-------------------------- */
+/* Tag
+-------------------------- */
+/* clearfix
+--------------------------*/
+.zs-message__wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999999 !important;
+}
+.zs-message {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  padding: 10px 18px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s, transform .4s;
+  overflow: hidden;
+  color: #fff;
+  font-size: 15px;
+}
+.zs-message__group {
+  margin-left: 38px;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+}
+.zs-message__group.is-with-icon {
+  margin-left: 0;
+}
+.zs-message__group p {
+  font-size: 14px;
+  margin: 0 34px 0 0;
+  white-space: nowrap;
+  color: #fff;
+  text-align: justify;
+}
+.zs-message__img {
+  size: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.zs-message__icon {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.zs-message__closeBtn {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  cursor: pointer;
+  color: #252c32;
+  font-size: 14px;
+}
+.zs-message__closeBtn:hover {
+  color: #252c32;
+}
+.zs-message .zs-icon-circle-check {
+  color: #1bc91a;
+}
+.zs-message .zs-icon-circle-cross {
+  color: #fd543d;
+}
+.zs-message .zs-icon-information {
+  color: #50bfff;
+}
+.zs-message .zs-icon-warning {
+  color: #fe931f;
+}
+.zs-message-fade-enter,
+.zs-message-fade-leave-active {
+  opacity: 0;
+  transform: translate(-50%, -100%);
+}

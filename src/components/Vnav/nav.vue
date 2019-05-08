@@ -36,12 +36,22 @@
                 <!-- <el-menu-item index="3-6"><router-link tag="li"  to="/mock"></router-link>测试</el-menu-item> -->
               </el-submenu>
 
-               <el-submenu index="2">
+              <el-submenu index="2">
                 <template slot="title">
                 <i class="el-icon-location"></i>
                 <span>测试模块</span>
                 </template>
                 <el-menu-item index="2-1"><router-link tag="li"  to="/test">test</router-link></el-menu-item>
+                <!-- <el-menu-item index="3-5"><router-link tag="li"  to="/t"></router-link>测试</el-menu-item>
+                <el-menu-item index="3-6"><router-link tag="li"  to="/mock"></router-link>测试</el-menu-item> -->
+              </el-submenu>
+
+               <el-submenu index="3">
+                <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>地图模块</span>
+                </template>
+                <el-menu-item index="2-1"><router-link tag="li"  to="/amap">高德地图</router-link></el-menu-item>
                 <!-- <el-menu-item index="3-5"><router-link tag="li"  to="/t"></router-link>测试</el-menu-item>
                 <el-menu-item index="3-6"><router-link tag="li"  to="/mock"></router-link>测试</el-menu-item> -->
               </el-submenu>
@@ -58,7 +68,7 @@
                 </template>
                 <el-menu-item index="4-1"><router-link tag="li"  to="/test">test</router-link></el-menu-item>
               </el-submenu> -->
-              <el-submenu index="3">
+              <el-submenu index="4">
                 <template slot="title">
                 <i class="el-icon-location"></i>
                 <span>测试菜单</span>

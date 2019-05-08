@@ -64,10 +64,12 @@ export default {
         switch (cmditem) {
             case 'info':
                 console.log("详情。。。")
+                this.$router.push('/infoModify');
                 break;
             case 'pass':
                 // this.showInfoList();
-                console.log("修改密码。。。")
+                console.log("修改密码。。。");
+                this.$router.push('/slider');
                 break;
             case 'logout':
                 // this.logout();
