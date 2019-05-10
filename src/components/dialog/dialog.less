@@ -1,0 +1,204 @@
+@import "../../assets/less/variables";
+
+
+.dialog-fade-enter-active {
+    animation: dialog-fade-in 0.5s  linear;
+}
+
+.dialog-fade-leave-active {
+    animation: dialog-fade-out 0.5s  linear;
+}
+
+
+@keyframes dialog-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dialog-fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.dialog-scale-enter-active {
+    animation: dialog-scale-in 0.3s ease-out;
+}
+
+.dialog-scale-leave-active {
+    animation: dialog-scale-out 0.3s ease-out;
+}
+
+@keyframes dialog-scale-in {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes dialog-scale-out {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.coo-dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    max-width: 90%;
+    &-content{
+        position: relative;
+    }
+    &-no-footer{
+        padding-bottom: 20px;
+    }
+    &-wrapper {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        overflow: auto;
+        margin: 0;
+    }
+
+    &-header {
+        padding: 13px 16px;
+        border-radius: 4px 4px 0 0;
+        background: #fff;
+        color: rgba(0,0,0,.65);
+        border-bottom: 1px solid #e9e9e9;
+        line-height: 1;
+        font-size: 16px;
+        color: #000000;
+    }
+    &-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: transparent;
+        border: none;
+        line-height: 20px;
+        outline: none;
+        padding: 0px;
+        display: inline-block;
+        .coo-icon{
+            font-size: 20px;
+            &:hover{
+                color: @color-green;
+            }
+        }
+    }
+    &-body {
+        padding: 16px;
+        line-height: 1.5;
+    }
+    &-footer {
+        border-top: 1px solid #e9e9e9;
+        padding: 10px 16px 10px 10px;
+        text-align: right;
+        border-radius: 0 0 4px 4px;
+        text-align: right;
+    }
+    &-btn{
+        display: inline-block;
+        padding: 0 15px;
+        font-size: 14px;
+        border-radius: 4px;
+        height: 32px;
+        background-color: #fff;
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+        border: 1px solid transparent;
+        outline: none;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    &-cancel{
+        border-color: #d9d9d9;
+        &:active{
+            border-color: @color-green;
+            color: @color-green;
+        }
+    }
+    &-ok{
+        color: #ffffff;
+        border-color: @color-green;
+        background-color: @color-green;
+        &:active{
+            background-color: #108ee9;
+        }
+    }
+    &-type{
+        &-body{
+            position: relative;
+            padding: 50px 40px 10px 120px;
+        }
+        &-icon{
+            position: absolute;
+            left: 50px;
+            top: 40px;
+            .coo-icon{
+                font-size: 55px;
+                &.coo-icon-help, &.coo-icon-information{
+                    color: #10AEFF;
+                }
+                &.coo-icon-warning{
+                    color: #FFBE00;
+                }
+                &.coo-icon-success{
+                    color: @color-green;
+                }
+                &.coo-icon-wrong{
+                    color: #F76260;
+                }
+            }
+        }
+        &-title{
+            color: #000000;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+        &-content{
+            margin-top: 10px;
+            font-size: 12px;
+            color: #888;
+        }
+        &-footer{
+            text-align: right;
+            padding-bottom: 20px;
+            padding-right: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .coo-dialog{
+        &-type-body{
+            padding: 40px 30px 0px 100px;
+        }
+        &-type-icon{
+            left: 30px;
+            top: 35px;
+        }
+    }
+}

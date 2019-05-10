@@ -1,6 +1,7 @@
 /**
  * Created by yecaixin on 2019/5/6.
  */
+import Vue from 'vue';
 
 // import Loading from './loading/index';
 // import Message from './message/index';
@@ -30,6 +31,8 @@ import ZsButton from './button/index';
 // import ZsRadioGroup from './radio-group/index';
 // import tag from './tag/index';
 
+import Cxtoast from './toast/toast.js';
+
 
 const components = [
     // ZsIcon,
@@ -51,8 +54,12 @@ const components = [
     // ZsRadio,
     // ZsRadioGroup,
     // tag
+    // Cxtoast
 ]
 
+if (!window.install) {
+    Vue.prototype.$toast = Cxtoast;
+}
 const ZsUI = function (Vue, opts = {}) {
 
     if (ZsUI.installed) return;
@@ -71,6 +78,7 @@ if (typeof window !== 'undefined' && window.Vue) {
     install(window.Vue);
 }
 export default ZsUI;
+
 export {
     // ZsIcon,
     // Message,
@@ -93,4 +101,5 @@ export {
     // ZsRadio,
     // ZsRadioGroup,
     // tag
+    // Cxtoast
 };

@@ -1,21 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
-import coco         from '@/page/test/test'
-import home         from '@/components/home/home'
+// 写法1
+import home         from '@/page/home/home'
+// import home         from '@/components/home/home'
 import subgroup     from '@/components/subgroup/subgroup'
 import echarts      from '@/components/echarts/echarts'
 import table        from '@/components/table/table'
 import test         from '@/components/test/test'
 import slider       from '@/components/slider/slider'
 import infoModify   from '@/components/infoModify/infoModify'
-
-import examples     from '@/page/examples/index'
-import amap     from '@/page/map/index'
- 
-// const amap = r => require.ensure( [], () => r (require('@/page/map/index')))//页面按需加载的引入
-
-// import test     from '@/components/test/test'
+import amap         from '@/page/map/index'
+// 写法2
+const examples = () => import('@/page/examples/index')
+// 写法3  按需加载
 // const test = r => require.ensure( [], () => r (require('@/components/test/test')))//页面按需加载的引入
 
 
@@ -28,47 +25,74 @@ export default new Router({
     {
       path: '/',
       name: 'coco',
-      component: coco
+      component: home,
+      meta: {
+        title: '首页'
+      }
     },
     {
       path: '/subgroup',
       name: 'subgroup',
-      component: subgroup
+      component: subgroup,
+      meta: {
+        title: '组件'
+      }
     },
     {
       path: '/echarts',
       name: 'echarts',
-      component: echarts
+      component: echarts,
+      meta: {
+        title: '表格'
+      }
     },
     {
       path: '/table',
       name: 'table',
-      component: table
+      component: table,
+      meta: {
+        title: 'table'
+      }
     },
     {
       path: '/slider',
       name: 'slider',
-      component: slider
+      component: slider,
+      meta: {
+        title: 'slider'
+      }
     },
     {
       path: '/test',
       name: 'test',
-      component: test
+      component: test,
+      meta: {
+        title: '测试页面'
+      }
     },
     {
       path: '/infoModify',
       name: 'infoModify',
-      component: infoModify
+      component: infoModify,
+      meta: {
+        title: '修改信息'
+      }
     },
     {
       path: '/amap',
       name: 'amap',
-      component: amap
+      component: amap,
+      meta: {
+        title: '高德地图'
+      }
     },
     {
       path: '/examples',
       name: 'examples',
-      component: examples
+      component: examples,
+      meta: {
+        title: '组件demo'
+      }
     },
   ]
 })

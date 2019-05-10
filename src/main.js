@@ -33,6 +33,14 @@ VueAMap.initAMapApiLoader({
 
 Vue.config.productionTip = false
 
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {//如果设置标题，拦截后设置标题
+    document.title = to.meta.title
+  }
+  next()
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

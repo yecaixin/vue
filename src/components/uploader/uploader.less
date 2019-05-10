@@ -1,0 +1,81 @@
+@import "../../assets/less/variables";
+@import "../../assets/css/index";
+.coo-uploader{
+    &-image{
+        border: 1px solid #e0e0e0;
+        padding: 5px;
+        height: 100px;
+        width: 100px;
+        box-sizing: border-box;
+        float: left;
+        margin-right: 5px;
+        transition: border-color 0.2s ease;
+        position: relative;
+        .lazy-img{
+            width: 90px;
+            height: 90px;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:hover {
+            border-color: @color-green;
+        }
+    }
+    &-bar{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 3px 0px;
+        font-size: 12px;
+        line-height: 1;
+        text-align: center;
+        a{
+            color: white;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &-btn{
+        border: 1px solid #e0e0e0;
+        transition: border-color 0.2s ease;
+        height: 100px;
+        width: 100px;
+        position: relative;
+        background-color: transparent;
+        outline: none;
+        float: left;
+        &:hover{
+            border-color: @color-green;
+            color: @color-green;
+            .jx-icon-add{
+                color: @color-green;
+            }
+        }
+    }
+    .jx-icon-add{
+        font-size: 50px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: color 0.2s ease;
+        color: gray;
+    }
+
+    &-file{
+        display: none;
+    }
+    img{
+        width: 100%;
+    }
+    .coo-icon{
+        color: #d2d2d2;
+    }
+}

@@ -1,0 +1,28 @@
+// @import "./global/font.less";
+html{
+    background: #f7fafc;
+}
+body{
+    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+a{
+    &:hover{
+        text-decoration: underline;
+    }
+    &.link-demo{
+        color: green;
+        margin-right: 10px;
+    }
+}
+a, div,span,p{
+    -webkit-tap-highlight-color:transparent;
+}
