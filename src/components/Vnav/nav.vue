@@ -115,7 +115,7 @@ export default {
     background:rgb(84, 92, 100)
 }
 .side{
-  width:200px;height:800px;background:rgb(84, 92, 100);
+  width:200px;height:100%;background:rgb(84, 92, 100);
 }
 .sideItem{
   width:200px;height:100px;

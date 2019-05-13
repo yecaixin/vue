@@ -11,9 +11,10 @@ export default {};
 </script>
 
 <style lang="less" scoped>
+@height=90%;
 #content {
   flex: 1;
-  height: 90%;
+  // height: 100%;
   margin: 20px;
   box-sizing: border-box;
   background: white;

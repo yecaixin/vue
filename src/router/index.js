@@ -15,6 +15,8 @@ const examples = () => import('@/page/examples/index')
 // 写法3  按需加载
 // const test = r => require.ensure( [], () => r (require('@/components/test/test')))//页面按需加载的引入
 
+//pc端自己封装的组件
+const DemoPaginate=()=>import('@/components/paginate/ComPaginate')
 
 
 Vue.use(Router)
@@ -92,6 +94,14 @@ export default new Router({
       component: examples,
       meta: {
         title: '组件demo'
+      }
+    },
+    {
+      path: '/demoPaginate',
+      name: 'DemoPaginate',
+      component: DemoPaginate,
+      meta: {
+        title: '分页插件'
       }
     },
   ]
