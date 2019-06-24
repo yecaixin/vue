@@ -19,7 +19,8 @@ Vue.prototype.$fetch=fetch;
 Vue.prototype.$patch=patch;
 Vue.prototype.$put=put;
 
-
+import myCharts from 'echarts'
+Vue.use(myCharts)
 
 //vue-amap
 import VueAMap from 'vue-amap'

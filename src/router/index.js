@@ -10,6 +10,8 @@ import test         from '@/components/test/test'
 import slider       from '@/components/slider/slider'
 import infoModify   from '@/components/infoModify/infoModify'
 import amap         from '@/page/map/index'
+import ecological         from '@/page/ecological/index'
+
 // 写法2
 const examples = () => import('@/page/examples/index')
 // 写法3  按需加载
@@ -102,6 +104,70 @@ export default new Router({
       component: DemoPaginate,
       meta: {
         title: '分页插件'
+      }
+    },
+    {
+      path: '/ecological',
+      name: 'ecological',
+      component: ecological,
+      meta: {
+        title: '数据可视化'
+      }
+    },
+    {
+      path: '/overview',
+      name: 'overview',
+      component: ecological,
+      meta: {
+        title: 'overview'
+      }
+    },
+    {
+      path: '/foodManage',
+      name: 'foodManage',
+      component: ecological,
+      meta: {
+        title: 'foodManage'
+      }
+    },
+    {
+      path: '/humidMonitor',
+      name: 'humidMonitor',
+      component: ecological,
+      meta: {
+        title: 'humidMonitor'
+      }
+    },
+    {
+      path: '/dfManage',
+      name: 'dfManage',
+      component: ecological,
+      meta: {
+        title: 'dfManage'
+      }
+    },
+    {
+      path: '/personnelManage',
+      name: 'personnelManage',
+      component: ecological,
+      meta: {
+        title: 'personnelManage'
+      }
+    },
+    {
+      path: '/eWarningCorrection',
+      name: 'eWarningCorrection',
+      component: ecological,
+      meta: {
+        title: 'eWarningCorrection'
+      }
+    },
+    {
+      path: '/videoSurveillance',
+      name: 'videoSurveillance',
+      component: ecological,
+      meta: {
+        title: 'videoSurveillance'
       }
     },
   ]
