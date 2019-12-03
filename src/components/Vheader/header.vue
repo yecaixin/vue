@@ -32,9 +32,9 @@
       
     </el-row>
     <ul class="nav-wrap">
-        <router-link to="/overview" class="nav">食堂概览</router-link>
-        <router-link  to="/foodManage" class="nav" :class="{'active': isActive('/foodManage')}">食材管理</router-link>
-        <router-link  to="/humidMonitor" class="nav" :class="{'active': isActive('/humidMonitor')}">温湿监控</router-link>
+        <router-link to="/overview" class="nav">概览</router-link>
+        <router-link  to="/diy" class="nav" :class="{'active': isActive('/diy')}">自定义</router-link>
+        <router-link  to="/cart" class="nav" :class="{'active': isActive('/cart')}">购物车</router-link>
         <router-link  to="/dfManage" class="nav" :class="{'active': isActive('/dfManage')}">消毒管理</router-link>
         <router-link  to="/personnelManage" class="nav" :class="{'active': isActive('/personnelManage')}">人员管理</router-link>
         <router-link  to="/eWarningCorrection" class="nav" :class="{'active': isActive('/eWarningCorrection')}">预警纠偏</router-link>

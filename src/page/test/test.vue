@@ -1,7 +1,6 @@
 <template>
   <div>
-    <zs-button type="primary" @click="sure">确定</zs-button>
-    <zs-button type="danger" @click="showMaterialDialog=true;dialogTitle='新建素材';submitTitle='上传素材'">新建素材</zs-button>
+    
   </div>
 </template>
 
@@ -9,7 +8,8 @@
 export default {
    data() {
     return {
-      showMaterialDialog:false,
+     
+     
     };
   },
   //  components: {
@@ -28,5 +28,5 @@ export default {
 </script>
 
 <style lang="less">
-    // @import "./style.less";
+
 </style>

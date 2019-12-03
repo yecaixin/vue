@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import store from '@/vuex/store.js'
+
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
@@ -12,6 +14,7 @@ import ZsUI from '@/components/index'
 Vue.use(ZsUI);
 
 import axios from 'axios'
+
 import {post,fetch,patch,put} from './utils/http'
 //定义全局变量
 Vue.prototype.$post=post;
@@ -34,6 +37,8 @@ VueAMap.initAMapApiLoader({
 
 Vue.config.productionTip = false
 
+// 请求全局数据
+store.dispatch('fetchTitle')
 
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {//如果设置标题，拦截后设置标题
@@ -46,6 +51,7 @@ router.beforeEach((to, from, next) => {
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
