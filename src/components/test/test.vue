@@ -1,42 +1,38 @@
 <template>
   <div id="subgrounp">
-  {{userInfo}}
-
-  <button @click = get()> 获取</button>
-  <button @click = get1()> 获取1</button>
-
+     {{message}}
+    <cx-serach>11</cx-serach>
+    <div class="block">
+      <span class="demonstration">周</span>
+      <el-date-picker
+        v-model="value3"
+        type="week"
+        format="yyyy 第 WW 周"
+        placeholder="选择周">
+      </el-date-picker>
+    </div>
   </div>
 </template>
 
 <script>
-import store from '@/vuex/store.js'
-  import {mapActions, mapGetters} from 'vuex';
+import Serach from '../search/search.vue';
+
 export default {
-  data () {
-      return {
-        userName: '默认用户名', // 用户名
-      }
-    },
-  computed: {
-     ...mapGetters({
-        title: 'getTitle',
-        userInfo: 'getUserInfo'
-      })
-    },
+   components: {
+          cxSerach:Serach
+        },
+  data: function() {
+    return {
+      message: "Welcome",
+      value3: '',
+     
+    };
+  },
   created(){
-      // 如果state里面没有用户信息则重新存
-      if(store.state.info.userInfo == '') {
-        console.log("@@@@")
-        store.dispatch('fetchSetUserInfo')
-      }
+      
     },
   methods: {
-    get:function(){
-      store.dispatch('fetchSetUserInfo')
-    },
-    get1:function(){
-      store.dispatch('fetchSetUserInfo1')
-    }
+  
   }
 };
 </script>

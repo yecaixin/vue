@@ -10,9 +10,7 @@ import test         from '@/components/test/test'
 import slider       from '@/components/slider/slider'
 import infoModify   from '@/components/infoModify/infoModify'
 import amap         from '@/page/map/index'
-import ecological   from '@/page/ecological/index'
-import diy         from '@/components/diy/index'
-import cart         from '@/page/cart/index'
+import ecological         from '@/page/ecological/index'
 
 // 写法2
 const examples = () => import('@/page/examples/index')
@@ -125,19 +123,19 @@ export default new Router({
       }
     },
     {
-      path: '/diy',
-      name: '自定义',
-      component: diy,
+      path: '/foodManage',
+      name: 'foodManage',
+      component: ecological,
       meta: {
-        title: '自定义'
+        title: 'foodManage'
       }
     },
     {
-      path: '/cart',
-      name: 'cart',
-      component: cart,
+      path: '/humidMonitor',
+      name: 'humidMonitor',
+      component: ecological,
       meta: {
-        title: 'cart'
+        title: 'humidMonitor'
       }
     },
     {
